@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 .onboarding_screen1{
     background-image: url('../images/onboarding_bg1.jpg');
@@ -16,24 +17,29 @@
 }
 
 .onboarding_screen1 h1{
-    font-weight: 100;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 24px;
     color: #ffffff;
+    margin: 0;
     
 }
 
 
 .hero{
     padding: 0px 16px;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-
+    width: 100%;
 }
 
 a{
     text-decoration:none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4A37F8;
+    margin-bottom: 10px;
 }
 
 .get_started{
@@ -54,4 +60,72 @@ a{
     border-radius: 10px;
     color: black;
     margin-top:10px;
+}
+
+.onboarding_screen2{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.onboarding_screen2 .hero{
+    height: 80vh;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+
+}
+
+.chevron-left{
+   background-color: #E8E8E8;
+   border-radius: 10px;
+   padding: 13px 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: fit-content;
+   margin-bottom: 33px;
+   color: black;
+   box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.chevron-left svg{
+   height: 30px;
+   width: 30px;
+   position: static;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+    padding-inline: 10px;
+}
+
+label{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input{
+    height: 46px;
+    border-radius: 10px;
+    border: 0.5px solid #616165;
+}
+
+form div{
+    margin-bottom: 30px;
+}
+
+.forgot-password{
+    font-weight: 400;
+    font-size: 16px;
+    color: #4A37F8;
+}
+
+.new_user{
+    text-align: center;
 }
