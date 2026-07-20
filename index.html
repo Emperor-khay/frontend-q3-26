@@ -4,54 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Skills Pool</title>
 </head>
 <body>
     <section>
-        <nav class="nav">
+        <nav class="nav flex items-center gap-[36.46px] py-[18.23px] px-[116px] justify-between">
             <!-- Logo -->
             <div>
                 <a href="">
-                    <h1 class="logo_text">Datavynce <span>Solutions</span></h1>
+                    <h1 class="font-bold text-[23.24px] leading-[36.46px] text-[#0A2540] ">Datavynce <span class="text-[#00C2FF]">Solutions</span></h1>
                 </a>
             </div>
 
             <!-- navigation links -->
-             <div class="nav_links">
-                <span>
-                    <a href="">Home</a>
-                    <a href="">About Us</a>
-                    <a href="" class="services" >Services 
+             <div class="nav_links flex items-center gap-[36.46px]">
+                <span class="flex items-center gap-[36.46px]">
+                    <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#374151]">Home</a>
+                    <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#374151]">About Us</a>
+                    <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#374151] flex items-center" >Services 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="height: 18px; width: 18px; margin-left: 5px">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg>
                     </a>
-                    <a href="">Contact Us</a>
+                    <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#374151]">Contact Us</a>
                 </span>
-                <a href="" class="action_button">Book Consultancy</a>
+                <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#fff] bg-[#00C2FF] py-[10px] px-[28px] rounded-[18.23px]">Book Consultancy</a>
              </div>
         </nav>
 
-        <section class="hero">
-            <h1>Innovative IT Solutions for <br> 
+        <section class="hero bg-[url('./images/hero_bg.png')] bg-no-repeat bg-cover text-[#fff] pl-[116px] h-[80vh] flex flex-col gap-[28px] justify-center">
+            <h1 class="font-bold text-[40.8px] leading-[48px]">Innovative IT Solutions for <br> 
                 Your 
-                <span>
+                <span class="text-[#00C2FF] ">
                     Digital <br>
                     Transformation
                 </span>
             </h1>
-            <p>
+            <p class="font-normal text-[15.3px] leading-[28px] text-[#D1D5DB]">
                 We help businesses leverage technology to drive growth, <br>
                 improve efficiency, and stay competitive in today's digital  <br>
                 landscape.
             </p>
-            <div class="hero_buttons">
-                <a href="" class="action_button">Book Cunsultancy</a>
-                <a href="" class="action_button2">Explore Services</a>
+            <div class="gap-[16px] flex items-center">
+                <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#ffffff] bg-[#00C2FF] py-[10px] px-[28px] rounded-[18.23px]">Book Cunsultancy</a>
+                <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#ffffff] py-[10px] px-[28px] border-2 rounded-[18.23px]">Explore Services</a>
             </div>
         </section>
         
-        <section></section>
+        <section class="py-[80px] px-[88px] space-y-[64px] bg-[#F9FAFB]">
+            
+            <div class="text-center space-y-[16px]">
+                <h1 class="font-bold text-[30.6px] leading-[40px] text-[#0A2540]">Our Services</h1>
+                <p class="font-normal text-[13.6px] leading-[24px] text-[#4B5563]">We offer a comprehensive range of IT and software services to help your business succeed in <br> the digital era.</p>
+            </div>
+
+            <div class="space-y-[48px]">
+                <div class="flex gap-[24px] justify-center">
+                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px]">
+                        <div>
+                            <img src="./images/icons/Consultancy.svg" alt="">
+                        </div>
+                        <h1 class="font-bold text-[17px] leading-[28px] text-[#0A2540]">Consultancy</h1>
+                        <p class="text-[#4B5563] text-[13.6px] leading-[24px]" >
+                            Expert advice to help you make <br>
+                            informed technology decisions <br>
+                            aligned with your business goals.
+                        </p>
+                        <div class="pt-[10px]">
+                            <a href="" class="text-[#00C2FF] flex items-center gap-[10px]" >Learn more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right text-[#00C2FF]"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px]">
+                        <div>
+                            <img src="./images/icons/Software.svg" alt="">
+                        </div>
+                        <h1 class="font-bold text-[17px] leading-[28px] text-[#0A2540]">Software Development</h1>
+                        <p class="text-[#4B5563] text-[13.6px] leading-[24px]" >
+                            Expert advice to help you make <br>
+                            informed technology decisions <br>
+                            aligned with your business goals.
+                        </p>
+                        <div class="pt-[10px]">
+                            <a href="" class="text-[#00C2FF] flex items-center gap-[10px]" >Learn more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right text-[#00C2FF]"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px]">
+                        <div>
+                            <img src="./images/icons/Training.svg" alt="">
+                        </div>
+                        <h1 class="font-bold text-[17px] leading-[28px] text-[#0A2540]">Training</h1>
+                        <p class="text-[#4B5563] text-[13.6px] leading-[24px]" >
+                            Expert advice to help you make <br>
+                            informed technology decisions <br>
+                            aligned with your business goals.
+                        </p>
+                        <div class="pt-[10px]">
+                            <a href="" class="text-[#00C2FF] flex items-center gap-[10px]" >Learn more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right text-[#00C2FF]"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px]">
+                        <div>
+                            <img src="./images/icons/Branding.svg" alt="">
+                        </div>
+                        <h1 class="font-bold text-[17px] leading-[28px] text-[#0A2540]">Branding</h1>
+                        <p class="text-[#4B5563] text-[13.6px] leading-[24px]" >
+                            Expert advice to help you make <br>
+                            informed technology decisions <br>
+                            aligned with your business goals.
+                        </p>
+                        <div class="pt-[10px]">
+                            <a href="" class="text-[#00C2FF] flex items-center gap-[10px]" >Learn more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right text-[#00C2FF]"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="" class="text-white bg-[#0A2540] rounded-[16px] py-[11.33px] px-[24px]">View All Services</a>
+                </div>
+            </div>
+        </section>
         
         <section></section>
         
