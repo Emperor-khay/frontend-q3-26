@@ -1,0 +1,108 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 992px) {
+    .nav_links {
+        display: none;
+    }
+
+    .nav{
+        padding: 18.23px;
+    }
+
+    .hero>p>br{
+        display: none;
+    }
+
+    .hero_buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero_buttons a{
+        width: 100%;
+    }
+
+    .action_button br{
+        display: block;
+    }
+
+    .action_button, .action_button2{
+        /* line-height: 20px; */
+        text-align: center;
+        /* padding: 2px 10px; */
+
+    }
+
+    .hero{
+        padding-inline: 33px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .hero{
+        padding-left: 116px;
+    }
+
+    .logo_text{
+        display: block;
+    }
+
+    .nav{padding-inline: 116px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+     .hero_buttons{
+        flex-direction: row;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .nav{
+        padding-inline: 18.23px;
+    }
+
+    .menu{
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .menu{
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .hero{
+        height: fit-content;
+        gap: 10px;
+    }
+
+    .hero_buttons{
+        flex-direction: row;
+    }
+
+    .hero_buttons a{
+        width: fit-content;
+    }
+
+    .hero h1{
+        /* font-size: 30px; */
+        margin-top: 28px;
+    }
+
+    /* .hero>:not(:last-child){
+        margin-bottom: 0px;
+    }   */
+
+    
+
+    
+}
