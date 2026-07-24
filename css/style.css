@@ -11,11 +11,28 @@ a{
     text-decoration: none;
 }  
 
+  @keyframes animateLogo{
+    from{
+      color: #0A2540;
+    }
+    to{
+      color: red;
+    }
+  }
+
   .logo_text{
     font-weight: 700;
     font-size: 23.24px;
     line-height: 36.46px;
     color: #0A2540;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    animation-name: animateLogo;
+    animation-duration: 3000ms;
+    animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    animation-delay: 1000ms;
+    animation-iteration-count: 3;
+;
 }  
 
   .logo_text span{
@@ -87,6 +104,32 @@ a{
     color: #D1D5DB;
 }  
 
+  @keyframes buttonAnimation{
+    0%{
+      background-color: transparent;
+      border: 2px solid #fff;
+    }
+    20%{
+       background-color: #fff;
+      border: 2px solid #000;
+      color: #000;
+    }
+    80%{
+      background-color: #fff;
+      border: 2px solid #000;
+      color: #000;  
+    }
+    100%{
+      background-color: transparent;
+      border: 2px solid #fff;
+
+    }
+  }
+
+  .action_button2:hover{
+      animation: buttonAnimation 3000ms linear 1;
+  }
+
   .action_button2{
     background-color: transparent;
     border: 2px solid #fff;
@@ -115,4 +158,6 @@ a{
 
 /* .test{
    box-shadow: 0px 4px 6px -1px #0000001A;
+  
 } */
+

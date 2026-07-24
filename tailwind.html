@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/output.css">
     <title>Skills Pool - Tailwind</title>
 </head>
 <body>
     <section>
-        <nav class="nav flex items-center gap-[36.46px] py-[18.23px] px-[116px] justify-between">
+        <nav class="flex items-center gap-[36.46px] py-[18.23px] px-[10px] md:px-[116px] justify-between">
             <!-- Logo -->
             <div>
                 <a href="">
@@ -17,7 +17,7 @@
             </div>
 
             <!-- navigation links -->
-             <div class="nav_links flex items-center gap-[36.46px]">
+             <div class="hidden lg:flex items-center gap-[36.46px]">
                 <span class="flex items-center gap-[36.46px]">
                     <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#374151]">Home</a>
                     <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#374151]">About Us</a>
@@ -30,28 +30,33 @@
                 </span>
                 <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#fff] bg-[#00C2FF] py-[10px] px-[28px] rounded-[18.23px]">Book Consultancy</a>
              </div>
+
+            <div class="border border-[#00C2FF] p-[10px] rounded-[5px] block lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-logs-icon lucide-logs"><path d="M3 5h1"/><path d="M3 12h1"/><path d="M3 19h1"/><path d="M8 5h1"/><path d="M8 12h1"/><path d="M8 19h1"/><path d="M13 5h8"/><path d="M13 12h8"/><path d="M13 19h8"/></svg>
+            </div>
+
         </nav>
 
-        <section class="hero bg-[url('./images/hero_bg.png')] bg-no-repeat bg-cover text-[#fff] pl-[116px] h-[80vh] flex flex-col gap-[28px] justify-center">
-            <h1 class="font-bold text-[40.8px] leading-[48px]">Innovative IT Solutions for <br> 
+        <section style="background-image: url('./images/hero_bg.png')" class="hero bg-no-repeat bg-cover text-[#fff] px-[20px] sm:px-[10%] md:pl-[116px] h-[90vh] flex flex-col gap-[28px] justify-center">
+            <h1 class="hover:animate-bounce font-bold text-[40.8px] leading-[48px]">Innovative IT Solutions for <br class="hidden md:block"> 
                 Your 
                 <span class="text-[#00C2FF] ">
-                    Digital <br>
+                    Digital <br class="hidden md:block">
                     Transformation
                 </span>
             </h1>
             <p class="font-normal text-[15.3px] leading-[28px] text-[#D1D5DB]">
-                We help businesses leverage technology to drive growth, <br>
-                improve efficiency, and stay competitive in today's digital  <br>
+                We help businesses leverage technology to drive growth, <br class="hidden md:block">
+                improve efficiency, and stay competitive in today's digital  <br class="hidden md:block">
                 landscape.
             </p>
-            <div class="gap-[16px] flex items-center">
+            <div class="gap-[16px] grid text-center sm:flex items-center md:justify-start sm:justify-center">
                 <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#ffffff] bg-[#00C2FF] py-[10px] px-[28px] rounded-[18.23px]">Book Cunsultancy</a>
                 <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#ffffff] py-[10px] px-[28px] border-2 rounded-[18.23px]">Explore Services</a>
             </div>
         </section>
         
-        <section class="py-[80px] px-[88px] space-y-[64px] bg-[#F9FAFB]">
+        <section class="py-[80px] px-[20px] sm:px-[10%] lg:px-[1%] xl:px-[88px] space-y-[64px] bg-[#F9FAFB]">
             
             <div class="text-center space-y-[16px]">
                 <h1 class="font-bold text-[30.6px] leading-[40px] text-[#0A2540]">Our Services</h1>
@@ -59,15 +64,15 @@
             </div>
 
             <div class="space-y-[48px]">
-                <div class="flex gap-[24px] justify-center">
-                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px]">
+                <div class="flex flex-col lg:flex-row sm:grid lg:flex grid-cols-2 xl:grid xl:grid-cols-4 gap-[24px] justify-center">
+                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px] ">
                         <div>
                             <img src="./images/icons/Consultancy.svg" alt="">
                         </div>
                         <h1 class="font-bold text-[17px] leading-[28px] text-[#0A2540]">Consultancy</h1>
                         <p class="text-[#4B5563] text-[13.6px] leading-[24px]" >
-                            Expert advice to help you make <br>
-                            informed technology decisions <br>
+                            Expert advice to help you make <br class="hidden md:block xl:hidden">
+                            informed technology decisions <br class="hidden md:block xl:hidden">
                             aligned with your business goals.
                         </p>
                         <div class="pt-[10px]">
@@ -77,14 +82,14 @@
                         </div>
                     </div>
     
-                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px]">
+                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px] ">
                         <div>
                             <img src="./images/icons/Software.svg" alt="">
                         </div>
                         <h1 class="font-bold text-[17px] leading-[28px] text-[#0A2540]">Software Development</h1>
                         <p class="text-[#4B5563] text-[13.6px] leading-[24px]" >
-                            Expert advice to help you make <br>
-                            informed technology decisions <br>
+                            Expert advice to help you make <br class="hidden md:block xl:hidden">
+                            informed technology decisions <br class="hidden md:block xl:hidden">
                             aligned with your business goals.
                         </p>
                         <div class="pt-[10px]">
@@ -94,14 +99,14 @@
                         </div>
                     </div>
                     
-                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px]">
+                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px] ">
                         <div>
                             <img src="./images/icons/Training.svg" alt="">
                         </div>
                         <h1 class="font-bold text-[17px] leading-[28px] text-[#0A2540]">Training</h1>
                         <p class="text-[#4B5563] text-[13.6px] leading-[24px]" >
-                            Expert advice to help you make <br>
-                            informed technology decisions <br>
+                            Expert advice to help you make <br class="hidden md:block xl:hidden">
+                            informed technology decisions <br class="hidden md:block xl:hidden">
                             aligned with your business goals.
                         </p>
                         <div class="pt-[10px]">
@@ -111,14 +116,14 @@
                         </div>
                     </div>
                     
-                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px]">
+                    <div class="bg-[#fff] shadow-md p-[24.67px] rounded-[16px] space-y-[16px] ">
                         <div>
                             <img src="./images/icons/Branding.svg" alt="">
                         </div>
                         <h1 class="font-bold text-[17px] leading-[28px] text-[#0A2540]">Branding</h1>
                         <p class="text-[#4B5563] text-[13.6px] leading-[24px]" >
-                            Expert advice to help you make <br>
-                            informed technology decisions <br>
+                            Expert advice to help you make <br class="hidden md:block xl:hidden">
+                            informed technology decisions <br class="hidden md:block xl:hidden">
                             aligned with your business goals.
                         </p>
                         <div class="pt-[10px]">
