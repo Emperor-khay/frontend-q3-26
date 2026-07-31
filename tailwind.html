@@ -7,12 +7,30 @@
     <title>Skills Pool - Tailwind</title>
 </head>
 <body>
-    <section>
-        <nav class="flex items-center gap-[36.46px] py-[18.23px] px-[10px] md:px-[116px] justify-between">
+    <section class="relative z-10">
+
+        <!-- Mobile Overlay -->
+        <div class="absolute top-0 left-0 right-0 bottom-0 bg-[#374151] opacity-35 z-20 hidden" id="overlay" ></div>
+
+        <!-- Mobile side bar -->
+        <section class="w-[300px] sm:w-[50%] h-screen p-5  fixed z-999  hidden bg-white transition" id="sidebar">
+            <div class="space-y-[20px] pt-[100px] relative" >
+                <!-- Close buton -->
+                <button onclick="closeSideBar()" class="cursor-pointer absolute top-0 right-0 px-3 text-[40px] block text-[#374151] border border-[#374151] rounded-md">X</button>
+                
+                <a href="" class="font-medium text-[20px] leading-[27.35px] text-white bg-[#00C2FF] block p-3 rounded-md">Home</a>
+                <a href="" class="font-medium text-[20px] leading-[27.35px] text-[#374151] bg-[#00C2FF] block p-3 rounded-md">About Us</a>
+                <a href="" class="font-medium text-[20px] leading-[27.35px] text-[#374151] bg-[#00C2FF] block p-3 rounded-md">Services</a>
+                <a href="" class="font-medium text-[20px] leading-[27.35px] text-[#374151] bg-[#00C2FF] block p-3 rounded-md">Contact Us</a>
+                <a href="" class="font-medium text-[20px] leading-[27.35px] text-[#374151] bg-[#00C2FF] block p-3 rounded-md">Book Consultancy</a>
+            </div>
+        </section>
+
+        <nav class="flex items-center gap-[36.46px] py-[18.23px] px-[10px] md:px-[116px] lg:px-[30px] xl:px-[116px] justify-between">
             <!-- Logo -->
             <div>
                 <a href="">
-                    <h1 class="font-bold text-[23.24px] leading-[36.46px] text-[#0A2540] ">Datavynce <span class="text-[#00C2FF]">Solutions</span></h1>
+                    <h1 class="font-bold text-[23.24px] leading-[36.46px] text-[#0A2540]"><span  id="logo_text">Datavynce </span> <span class="text-[#00C2FF]">Solutions</span></h1>
                 </a>
             </div>
 
@@ -28,10 +46,11 @@
                     </a>
                     <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#374151]">Contact Us</a>
                 </span>
-                <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#fff] bg-[#00C2FF] py-[10px] px-[28px] rounded-[18.23px]">Book Consultancy</a>
+                <button onclick="document.querySelector('#logo_text').innerHTML = `Schoolville`;" class="cursor-pointer font-medium text-[15.5px] leading-[27.35px] text-[#fff] bg-[#00C2FF] py-[10px] px-[28px] rounded-[18.23px]">Book Consultancy</button>
              </div>
 
-            <div class="border border-[#00C2FF] p-[10px] rounded-[5px] block lg:hidden">
+             <!-- Menu -->
+            <div onclick="openSideBar()" class="cursor-pointer border border-[#00C2FF] p-[10px] rounded-[5px] block lg:hidden" id="menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-logs-icon lucide-logs"><path d="M3 5h1"/><path d="M3 12h1"/><path d="M3 19h1"/><path d="M8 5h1"/><path d="M8 12h1"/><path d="M8 19h1"/><path d="M13 5h8"/><path d="M13 12h8"/><path d="M13 19h8"/></svg>
             </div>
 
@@ -51,7 +70,7 @@
                 landscape.
             </p>
             <div class="gap-[16px] grid text-center sm:flex items-center md:justify-start sm:justify-center">
-                <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#ffffff] bg-[#00C2FF] py-[10px] px-[28px] rounded-[18.23px]">Book Cunsultancy</a>
+                <a onclick="ChangeLogoToSchoolville()" href="#" target="_self" class="font-medium text-[15.5px] leading-[27.35px] text-[#ffffff] bg-[#00C2FF] py-[10px] px-[28px] rounded-[18.23px]">Book Consultancy</a>
                 <a href="" class="font-medium text-[15.5px] leading-[27.35px] text-[#ffffff] py-[10px] px-[28px] border-2 rounded-[18.23px]">Explore Services</a>
             </div>
         </section>
@@ -150,5 +169,41 @@
         
         <footer></footer>
     </section>
+
+    <script>
+
+        function ChangeLogoToSchoolville(){
+            const logoText = document.querySelector("#logo_text");
+            logoText.innerHTML = `Schoolville`;
+            logoText.style.backgroundColor = "#00C2FF";
+            logoText.style.color = "white";
+            logoText.style.borderRadius = "5px";
+            logoText.style.padding = "5px";
+            // logoText.innerText = "Scoolville";
+            // logoText.textContent = "Schoolvile";
+        }
+
+        const overlay = document.getElementById('overlay');
+        const sidebar = document.getElementById('sidebar');
+        const menu = document.getElementById('menu');
+
+        function openSideBar(){
+            overlay.classList.remove('hidden');
+            sidebar.classList.remove('hidden');
+            // overlay.style.display = "block";
+            // sidebar.style.display = "block";
+        }
+
+        function closeSideBar(){
+            overlay.classList.add('hidden');
+            sidebar.classList.add('hidden');
+            // overlay.style.display = "none";
+            // sidebar.style.display = "none";
+
+        }
+
+    
+
+    </script>
 </body>
 </html>

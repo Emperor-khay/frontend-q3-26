@@ -32,9 +32,12 @@ const cars = ["Saab", 2, 4, "Volvo", "BMW"];
 // 	key:value;
 // 	key:function;
 // }
-// function printDisplayMessage() {
-//     console.log('Laptop display works');
-// }
+
+function printDisplayMessage() {
+    text = 'Laptop display works'
+    console.log(text);
+    // return text;
+}
 
 
 const Laptop = {
@@ -49,24 +52,26 @@ const Laptop = {
     webcam: true,
 
     display: function () {
-    console.log('The '+ this.company +' Laptop'+' display works');
+    text = 'Laptop display works'
+    console.log(text);
+    // return text;
+}
+
 }
 
 
-
-}
-
+// Object.poperty
 
 Laptop.display();
-// console.log(Laptop.model);
+console.log(Laptop.model);
 
 
 
 // 3. functions: ()
 
 function greet(title, name){
-//    console.log("Good Morning "+ title + " " + name);
-   return;
+   console.log("Good Morning "+ title + " " + name);
+//    return;
 }
 // console.log(result);
 greet("Mr","Andrew");
@@ -121,13 +126,22 @@ else{
 //     expression
 // }
 
-for(i = 0; i < 10; i++){
-    console.log(i);
-}
+// for(i = 0; i < 10; i++){
+//     console.log(i);
+// }
 
 // b. dowhile loop
 
+// let i = 0;
 // do{
 //     console.log(i);
+//     i++;
 // }
-// while(condition)
+// while(i < 10);
+
+// c. while loop
+// let i = 0;
+// while(i < 10) {
+//     console.log(i);
+//     i++;
+// }
