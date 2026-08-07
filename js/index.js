@@ -51,19 +51,20 @@ const Laptop = {
     fingerprintScanner: false,
     webcam: true,
 
-    display: function () {
-    text = 'Laptop display works'
-    console.log(text);
+    display: function(callback) {
+    callback();
+    // text = 'Laptop display works'
+    // console.log(text);
     // return text;
-}
+    }
 
 }
 
 
 // Object.poperty
 
-Laptop.display();
-console.log(Laptop.model);
+Laptop.display(printDisplayMessage);
+// console.log(Laptop.model);
 
 
 
@@ -74,8 +75,8 @@ function greet(title, name){
 //    return;
 }
 // console.log(result);
-greet("Mr","Andrew");
-greet("Mrs", "Joy");
+// greet("Mr","Andrew");
+// greet("Mrs", "Joy");
 
 
 
