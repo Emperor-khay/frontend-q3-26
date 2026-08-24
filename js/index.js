@@ -146,3 +146,9 @@ else{
 //     console.log(i);
 //     i++;
 // }
+
+
+function printText(){
+    console.log('Printing');
+    printText();
+}

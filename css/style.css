@@ -1,8 +1,8 @@
-  *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:sans-serif;
 }
 
 /* body{height: 200vh;} */
@@ -11,27 +11,27 @@ a{
     text-decoration: none;
 }  
 
-  @keyframes animateLogo{
+  /* @keyframes animateLogo{
     from{
       color: #0A2540;
     }
     to{
       color: red;
     }
-  }
+  } */
 
   .logo_text{
     font-weight: 700;
     font-size: 23.24px;
     line-height: 36.46px;
-    color: #0A2540;
+    color: #0a0e40;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-
+/* 
     animation-name: animateLogo;
     animation-duration: 3000ms;
     animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
     animation-delay: 1000ms;
-    animation-iteration-count: 3;
+    animation-iteration-count: 3; */
 ;
 }  
 
@@ -60,7 +60,7 @@ a{
 
   .nav_links, .nav_links span, .nav{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 36.46px;
 }  
 
@@ -104,7 +104,7 @@ a{
     color: #D1D5DB;
 }  
 
-  @keyframes buttonAnimation{
+  /* @keyframes buttonAnimation{
     0%{
       background-color: transparent;
       border: 2px solid #fff;
@@ -124,10 +124,12 @@ a{
       border: 2px solid #fff;
 
     }
-  }
+  } */
 
   .action_button2:hover{
-      animation: buttonAnimation 3000ms linear 1;
+      /* animation: buttonAnimation 3000ms linear 1; */
+      background-color: white;
+      color: black;
   }
 
   .action_button2{
