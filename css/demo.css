@@ -49,6 +49,7 @@ a{
     align-items: center;
 }
 
+
 .nav{
     justify-content: space-around;
     padding: 20px 0px;
@@ -59,6 +60,93 @@ a{
     display: none;
     width: 24px;
     height: 24px;
+}
+
+.hero{
+    background-image: url('../images/Skillpool_hero_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    position: absolute;
+    background: #000000B2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+}
+
+.hero_content{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 100px;
+}
+
+.hero_content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero_icon_1, .hero_icon_2{
+    border-radius: 37px;
+    width: 74px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_icon_1 img{
+    width: 36px;
+    height: 32px;
+}
+
+.hero_icon_2 img{
+    width: 30px;
+    height: 32px;
+}
+
+.hero_icon_1{
+    background-color: #FF6A3D;
+    border: 5px solid #844e3e;
+}
+
+.hero_icon_2{
+    background-color: #2E8B57;
+    border: 5px solid #405f4f;
+}
+
+.hero p{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38.4px;
+    text-align: center;
+    color: white;
+}
+
+.hero a{
+    padding: 15px 30px;
+    display: inline-block;
+    color: white;
+    border-radius: 30px;
+}
+
+.hero_link_1{
+    border: 2px solid #FF6A3D;
+}
+
+.hero_link_2{
+    border: 2px solid #2E8B57;
 }
 
 /* Media Querries */
@@ -77,11 +165,54 @@ a{
     .nav svg{
         display: block;
     }
+
+    .hero_content{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero{
+        height: 91vh;
+        background-position: 30% 0%;
+    }
+
+    .overlay{
+        background-color: #000000c2;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .nav_links{
+        display: none;
+    }
 
+    .nav svg{
+        display: block;
+    }
+
+        .hero_content{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero{
+        height: 91vh;
+        background-position: 30% 0%;
+    }
+
+    .overlay{
+        background-color: #000000c2;
+    }
+
+}
+
+@media only screen and (max-height: 500px) {
+    .hero{
+        height: fit-content;
+        padding: 50px 0px;
+    }    
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
 
