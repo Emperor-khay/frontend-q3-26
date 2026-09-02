@@ -27,6 +27,8 @@ a{
     font-size: 16px;
     line-height: 20px;
     color: #4B5563;
+    padding: 7px;
+    border-radius: 10px;
 }
 
 .action{
@@ -81,10 +83,7 @@ a{
 .overlay{
     position: absolute;
     background: #000000B2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     z-index: 5;
 }
 
@@ -123,7 +122,12 @@ a{
 
 .hero_icon_1{
     background-color: #FF6A3D;
+
     border: 5px solid #844e3e;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: #844e3e;
 }
 
 .hero_icon_2{
@@ -154,6 +158,29 @@ a{
     border: 2px solid #2E8B57;
 }
 
+.nav_links a:hover{
+    background-color: #2E8B57;
+    color: white;
+}
+
+.action:hover{
+    background-color: #2E8B57;
+  
+}
+
+.nav h1:hover{
+    cursor: pointer;
+    color: #FF6A3D;
+}
+
+.hero_link_1:hover{
+    background-color: #FF6A3D;
+}
+
+.hero_link_2:hover{
+    background-color: #2E8B57;
+}
+
 /* Media Querries */
 @media screen and (max-width: 350px) {
     .action{
@@ -174,10 +201,12 @@ a{
     .hero_content{
         flex-direction: column;
         gap: 50px;
+        padding-block: 5rem;
+
     }
 
     .hero{
-        height: 91vh;
+        height: fit-content;
         background-position: 30% 0%;
     }
 

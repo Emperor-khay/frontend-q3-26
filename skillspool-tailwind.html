@@ -9,48 +9,48 @@
 <body class="font-sans">
     <!-- Nav -->
     <nav class="nav flex items-center justify-around py-5">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:hidden">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
         <!-- Logo -->
-        <h1 class="font-bold text-4xl/[28px] text-[#2E8B57]">Skillpool</h1>
+        <h1 class="font-bold text-4xl/[28px] text-[#2E8B57] hover:cursor-pointer hover:text-[#FF6A3D]">Skillpool</h1>
 
         <div class="nav_link_container flex items-center">
             <!-- nav links -->
-            <div class="nav_links flex gap-4 mr-27.75">
-                <a href="" class="font-medium text-base/5 text-[#4B5563]">Home</a>
-                <a href="" class="font-medium text-base/5 text-[#4B5563]">How It Works</a>
-                <a href="" class="font-medium text-base/5 text-[#4B5563]">About</a>
-                <a href="" class="font-medium text-base/5 text-[#4B5563]">Contact Us</a>
+            <div class="nav_links hidden lg:flex gap-4 mr-27.75">
+                <a href="" class="font-medium text-base/5 text-[#4B5563] p-1.75 rounded-[10px] hover:bg-[#2E8B57] hover:text-white">Home</a>
+                <a href="" class="font-medium text-base/5 text-[#4B5563] p-1.75 rounded-[10px] hover:bg-[#2E8B57] hover:text-white">How It Works</a>
+                <a href="" class="font-medium text-base/5 text-[#4B5563] p-1.75 rounded-[10px] hover:bg-[#2E8B57] hover:text-white">About</a>
+                <a href="" class="font-medium text-base/5 text-[#4B5563] p-1.75 rounded-[10px] hover:bg-[#2E8B57] hover:text-white">Contact Us</a>
             </div>
     
             <!-- action button -->
-            <a href="" class="action bg-[#FF6A3D] rounded-[30px] text-white py-3.75 px-7.5 inline-block">POST A JOB</a>
+            <a href="" class="action bg-[#FF6A3D] hover:bg-[#2E8B57] rounded-[30px] text-white py-3.75 px-7.5 inline-block">POST A JOB</a>
         </div>
     </nav>
     <hr>
 
-    <section class="hero">
+    <section class="hero bg-[url('./images/Skillpool_hero_bg.png')] bg-no-repeat bg-cover bg-position-[30%_0%] relative h-fit lg:h-[80vh] flex justify-center items-center ">
         <!-- Hero Section -->
-        <div class="overlay">
+        <div class="overlay absolute bg-[#000000c2] lg:bg-[#000000B2] inset-0 z-5">
     
         </div>
-        <div class="hero_content">
-            <div>
-                <span class="hero_icon_1">
-                    <img src="./images/icons/hero_icon_1.svg" alt="">
+        <div class="hero_content relative z-10 flex lg:gap-25 flex-col lg:flex-row gap-12.5 py-20">
+            <div class="flex flex-col items-center gap-2.5">
+                <span class="hero_icon_1 rounded-[37px] size-18.5 flex justify-center items-center bg-[#FF6A3D] border-5 border-[#844e3e] ">
+                    <img src="./images/icons/hero_icon_1.svg" alt="" class="w-9 h-8">
                 </span>
-                <p>Are you an employer <br> looking to hire skilled <br> professionals?</p>
-                <a href=""  class="hero_link_1">GET STARTED &nbsp; <img src="./images/icons/white_arrow.svg" alt=""></a>
+                <p class="font-normal text-[32px] leading-[38.4px] text-center text-[white]">Are you an employer <br> looking to hire skilled <br> professionals?</p>
+                <a href=""  class="hero_link_1 py-3.75 px-7.5 text-white rounded-[30px] border-2 border-[#FF6A3D] flex items-center hover:bg-[#FF6A3D]">GET STARTED &nbsp; <img src="./images/icons/white_arrow.svg" alt=""></a>
             </div>
             
-            <div>
-                <span class="hero_icon_2">
-                    <img src="./images/icons/hero_icon_2.svg" alt="" >
+            <div class="flex flex-col items-center gap-2.5">
+                <span class="hero_icon_2 rounded-[37px] size-18.5 flex justify-center items-center bg-[#2E8B57] border-5 border-[#405f4f]">
+                    <img src="./images/icons/hero_icon_2.svg" alt="" class="w-7.5 h-8">
                 </span>
-                <p>Are you a <br> candidate looking <br> for a job?</p>
-                <a href="" class="hero_link_2">GET STARTED &nbsp;  <img src="./images/icons/white_arrow.svg" alt="" ></a>
+                <p class="font-normal text-[32px] leading-[38.4px] text-center text-[white]">Are you a <br> candidate looking <br> for a job?</p>
+                <a href="" class="hero_link_2 py-3.75 px-7.5 text-white rounded-[30px] border-2 border-[#2E8B57] flex items-center hover:bg-[#2E8B57]">GET STARTED &nbsp;  <img src="./images/icons/white_arrow.svg" alt="" class="w-3.75 h-2.25 " ></a>
             </div>
         </div>
     </section>
