@@ -1,3 +1,8 @@
+// Javascript Output methods
+// 1. console.log();
+// 2. element.innerHTML uses backtick ``; 
+// 3. element.innerText uses quotation mark "" '';
+// 4. window.alert();
 
 // Characteristics of programming languages:
 // 1. variables: memory locations for storing data
@@ -6,6 +11,11 @@
 // const
 // automatic
 
+// let student = "";
+// student = "Henry";
+// student = "Tochi";
+
+// console.log(student);
 // 	Declarative variable operator data
 // 	statement    name	=
 name = 'Andrew';
@@ -24,7 +34,10 @@ text = 'John said "dfkfg"';
 // undefined: data that doesn't exist
 
 // Array: []	0     1  2    3       4
-const cars = ["Saab", 2, 4, "Volvo", "BMW"];
+const cars = ["Saab", 2, 4, "Volvo", "BMW", [], {}];
+// indices/index
+
+// console.log(cars[6]);
 
 // Object: {}
 // key:value pairs or key:function pairs
@@ -35,7 +48,7 @@ const cars = ["Saab", 2, 4, "Volvo", "BMW"];
 
 function printDisplayMessage() {
     text = 'Laptop display works'
-    console.log(text);
+    // console.log(text);
     // return text;
 }
 
@@ -69,14 +82,52 @@ Laptop.display(printDisplayMessage);
 
 
 // 3. functions: ()
+// declarative functionName() {
+//     block of code
+// } 
+
+// Parameter is a variable defined in the function bracket
+// An arguement is the value of the parameter
+
+function displaySuccessMessage() {
+    let message = "You have logged in successfully";
+    // console.log(message);
+}
+function displayErrorMessage() {
+    let message = "Error while logging you in";
+    // console.log(message);
+}
+function displayInfoMessage() {
+    let message = "Log in to continue";
+    // console.log(message);
+    return message;
+}
+// message = displayInfoMessage();
+// console.log(message);
+
+
+
+function displayMessage(message = "No messages yet"){
+    console.log(message);
+}
+
+// displayMessage("You have logged in successfully");
+// displayMessage("Error while logging you in");
+// displayMessage("Log in to continue");
 
 function greet(title, name){
+    // using concatenation
    console.log("Good Morning "+ title + " " + name);
-//    return;
+
+    //    using template literals
+    //    console.log(`Good Morning ${title} ${name}`);
+
+    //    return;
 }
 // console.log(result);
 // greet("Mr","Andrew");
 // greet("Mrs", "Joy");
+// greet("Master", "Henry");
 
 
 
@@ -113,12 +164,12 @@ function greet(title, name){
 
 let num = -2
 if(num > 0 || num == 5){
-    console.log(true);
+    // console.log(true);
 // }else if(){
 
 }
 else{
-    console.log(false);
+    // console.log(false);
 }
 
 // 6. Loops
@@ -149,6 +200,6 @@ else{
 
 
 function printText(){
-    console.log('Printing');
+    // console.log('Printing');
     printText();
 }
